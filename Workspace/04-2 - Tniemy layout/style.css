@@ -1,0 +1,360 @@
+/******************************
+            Globals
+******************************/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'FiraSans';
+    margin: 0; 
+    background: whitesmoke;
+}
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+}
+/* Column widths 
+*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* Column offsets 
+*/
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/******************************
+        Feel and Look
+******************************/
+/* LOGO & MENU 
+*/
+header {
+    background-color: #313332;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+header>nav img {
+    padding: 10px 0;
+}
+header>nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float: right;
+}
+nav li {
+    display: inline-block;
+}
+header>nav ul>li>a {
+    display: block;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase; 
+}
+header>nav ul>li>a:hover {
+    background-color: #00c7e8;
+    transition: background 1s ease;
+}
+/* MAIN HERO 
+*/
+.hero {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://bcwtuw.db.files.1drv.com/y4m8gheGgnLJSXz1b-hv1KVjHbbry5gwm0N2yHOSF2yXg_udcem1QL508TnAiyUb1jigETPdKkcPmXu2EVN544yr8-1qUjVeacq5ztEaeRlNy3yu_Pev5642evCpRqaCsCsbbRB434y9h13dUXgTQJhfAFPPNqjcvXGUGb-fedK5MOsd_NEnGLPqThWU6izogyg8XYVspVf5Xrz-nLqf4G7PA?width=1600&height=500&cropmode=none);
+    height: 400px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slogan {
+    margin-top:75px;
+    background-color: #3f3f3fb6;
+    float: right;
+    max-width: 800px;
+    padding: 10px;
+}
+.slogan h1, h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 15px;
+    font-weight: 400;
+}
+.slogan h1 {
+    font-weight: 600;
+}
+/* ICONS AND CUSTOM HEADING 
+*/
+section>.container {
+    margin: 50px auto;
+}
+.icon {
+    padding: 35px 0 0 0;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border: 0 #ffffff;
+    border-radius: 15%;
+    background-color: #313332;
+    font-size: 75px;
+    color: #ffffff;
+}
+.icontain {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.icontain h3 {
+    margin: 25px;
+    color: #313332;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.icontain p  {
+    font-weight: 300;
+    margin: 25px;
+    color: #313332;
+}
+.custom_heading h1 {
+    margin: 50px;
+    color: #313332;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 600;  
+    text-align: center;  
+}
+.custom_heading p {
+    color: #313332;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+/* GALLERY 
+*/
+.image {
+    /* width: 100%; */
+    background-image:url(https://bcwouw.db.files.1drv.com/y4m4sIwzSRyB5vuiKvr67ITSfPe-w3iGby-WFsK8r6Z-VsrXEKcu26ZBa4H9wK0JnkZs5hDIx-U0CDArazmLvXUaEQgoRRakh3N_60Yc8XCxLxBdmPTT-6q3KnvwJXQ-eXplZhs_TrQx5d3yuDhfnofKc6qCLD_pS6CXeU750cKqr0_BfhS5whDjWIDYyzVnv9aiUKmmgiWo57ukUyHWWUfGg?width=300&height=200&cropmode=none);
+    height: 133px;
+    background-size: cover;
+}
+.image>.transparent_layer {
+    visibility: collapse;
+}
+.image:hover>.transparent_layer {
+    background-color: #313332cb;
+    visibility: visible;
+    margin: 0 auto;
+    font-size: 30px;
+    height: 133px;
+    text-align: center;
+    padding: 45px;
+}
+.image:hover>.transparent_layer>i {
+    color: #313332;
+    background-color: #ffffff;
+    border: 0 #fff;
+    border-radius: 15%;
+    padding: 10px;
+    margin: 5px;
+}
+/* TEAM CIRCLES 
+*/
+.teams {
+    padding: 50px 10%;
+}
+.team_icon h3  {
+    font-weight: 600;
+    color: #313332;
+    font-size: 30px;
+}
+.team_icon .img_place {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    text-align: center;
+}
+.team_icon img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.team_icon:hover .img_place {
+    background-color: black;
+    border-radius: 50%;
+}
+.team_icon:hover img {
+    opacity: 0.8;
+}
+.team_icon {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.team_icon .img_place span {
+visibility: collapse;
+}
+.team_icon:hover .img_place span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top:45%;
+    left:0;
+    text-align: center;
+    visibility: visible;
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.baner {
+    background-color: #313332;
+    padding: 50px 0 0 0 ;
+}
+.baner img {
+    float: right;
+    height: 375px;
+}
+.baner h1 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 40px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.baner p {
+    font-weight: 300;
+    color: whitesmoke;
+    font-size: 18px;
+}
+.baner>.row>.col-8>[class*="col-"] {
+    padding:0 10px 0 10px;
+
+}
+/* NUMBERS 
+*/
+.numbers {
+    text-align: center;
+}
+.numbers h1 {
+    color: #313332;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 40px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+.numbers p {
+    font-weight: 500;
+    color: #00c7e8;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+/* FOOTER
+*/
+footer {
+    text-align: center;
+    background-color: #313332;
+    color: whitesmoke;
+
+}
+.box {
+padding: 20px;
+    margin: 0;
+    border: 0;
+    position: relative;
+}
+.box h1 {
+    display: inline-block;
+    font-size: 40px;
+}
+.box>hr {
+    display: inline-block;
+    width: 25%;
+    max-width: 75px;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+.box p {
+    padding: 0;
+    margin: 0;
+}
+
+footer>.row>[class*="col-"] {
+    text-align: left;
+}
+.contact {
+    padding-top: 20px;
+}
+.social {
+padding-top: 20px;
+}
+
+.social>i {
+text-align: center;
+padding: 10px;
+width: 40px;
+height: 40px;
+    border: 0 #00c7e8;
+    font-size: 20px;
+    background-color: #00c7e8;
+}
+.copy {
+    background-color: black;
+    text-align: center;
+}
+.copy p {
+    text-align: center;
+    padding:10px;
+}
+
