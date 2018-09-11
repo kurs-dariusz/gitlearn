@@ -5,6 +5,11 @@ p {
   color: #6f19be;
 }
 
+img {
+  width: 50%;
+  border: #d32323 3px solid;
+}
+
 h2 {
   margin: 25px;
   color: #d32323;
