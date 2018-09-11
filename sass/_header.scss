@@ -1,4 +1,9 @@
 // header
 h2 {
-    font: 100% $primary-color;
+        margin: 25px;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 600;
 }

@@ -1,3 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,600,900&amp;subset=latin-ext);
+p {
+  font-weight: 300;
+  margin-top: 25px;
+  color: #6f19be;
+}
+
 h2 {
-  font: 100% #d32323;
+  margin: 25px;
+  color: #d32323;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
 }
